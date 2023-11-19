@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@600&family=Sonsie+One&family=Space+Grotesk:wght@400;700&display=swap');
+
+@import 'normalize.css';
+@import 'components/vars';
+@import 'components/mixins';
+// @import 'components/normalize';
+
+// reset
+@import 'components/reset';
+@import 'components/default';
+
+// blocks
+
+@import 'blocks/header';
+@import 'blocks/hero';
+@import 'blocks/select';
+@import 'blocks/about';
+@import 'blocks/homes';
+@import 'blocks/testimonials';
+@import 'blocks/footer';

@@ -1,0 +1,54 @@
+body {
+    overflow-x: hidden;
+    position: relative;
+    color: #fff;
+    @include font('Space Grotesk', 700);
+    background: $bg;
+    
+    &.active-body {
+        overflow: hidden;
+    }
+    --nav-vertical-size: 100px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 36px;
+}
+
+a,
+button {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li,
+ol li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1270px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.uptitle {
+    color: #00FFA3;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px; /* 125% */
+    text-transform: capitalize;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}

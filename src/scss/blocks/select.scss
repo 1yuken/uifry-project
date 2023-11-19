@@ -1,0 +1,254 @@
+#select-section {
+    padding: 70px 0 400px;
+    position: relative;
+    background: #101010;
+    overflow: hidden;
+}
+
+.select-companies {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.companies {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.select-question {
+    border: 1px solid #363636;
+    padding: 33px 27px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.select-question__text {
+    max-width: 275px;
+    color: #828282;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+    text-transform: capitalize;
+}
+
+.select__btn {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px; /* 162.5% */
+    text-transform: capitalize;
+    padding: 16px 24px;
+    transition: all .4s ease-in-out;
+}
+
+.select-question__buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.decline {
+    border: 1px solid #FFF;
+
+    &:hover {
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+.allow {
+    color: #131313;
+    border: 1px solid #00FFA3;
+    background: #00FFA3;
+
+    &:hover {
+        background: #0acc85;
+        border: 1px solid #0acc85;
+    }
+}
+
+.select-title__block {
+    margin-top: 110px;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        right: -50%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 100%;
+        background: url(../../../public/favicon/select-text.svg) no-repeat;
+        z-index: 0;
+    }
+}
+
+.select__uptitle {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.select__title {
+    position: relative;
+    z-index: 1;
+}
+
+.select-img__block {
+    margin-top: 140px;
+}
+
+.select__img {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.select__arrow {
+    position: absolute;
+    left: 35%;
+    top: 82%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.select__title_second {
+    position: relative;
+    max-width: 656px;
+    text-align: center;
+    margin: 70px auto 33px;
+    z-index: 1;
+}
+
+.select__text {
+    position: relative;
+    max-width: 545px;
+    margin: 0 90px 0 auto;
+    color: #828282;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+    text-transform: capitalize;
+    z-index: 1;
+}
+
+.select__deco {
+    position: absolute;
+    bottom: 2%;
+    z-index: 0;
+    left: 0;
+}
+
+@media (max-width: 1200px) {
+    .select-companies {
+        flex-direction: column;
+    }
+
+    .select-question {
+        margin-top: 20px;
+    }
+
+    .select__img {
+        position: relative;
+        width: 710px;
+        height: 602px;
+        margin: 0 auto;
+        order: 3;
+    }
+
+    .select-img__block {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .select__title_second {
+        order: 1;
+    }
+
+    .select__text {
+        text-align: center;
+        order: 2;
+        margin: 0 auto 20px;
+    }
+
+    .select__arrow {
+        display: none;
+    }
+
+    .select__deco {
+        bottom: 10%;
+    }
+
+    #select-section {
+        padding: 70px 0 70px;
+    }
+}
+
+@media (max-width: 992px) {
+    .select__uptitle {
+        font-size: 20px;
+    }
+
+    .select__title,
+    .select__title_second {
+        font-size: 60px;
+    }
+
+    .select__title_second {
+        margin: 70px auto 10px;
+    }
+
+    .select__text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .select__title, .select__title_second {
+        font-size: 45px;
+    }
+
+    .select__title_second {
+        margin: 20px auto 10px;
+    }
+
+    .select__img {
+        width: 80%;
+        height: 50%;
+    }
+
+    .select-title__block {
+        margin-top: 60px;
+    }
+
+    .companies {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .select-question__text {
+        font-size: 14px;
+    }
+
+    .select-question {
+        flex-direction: column;
+    }
+
+    .select__uptitle {
+        font-size: 18px;
+    }
+
+    .select__title, .select__title_second {
+        font-size: 35px;
+    }
+
+    .select__text {
+        font-size: 14px;
+    }
+}
